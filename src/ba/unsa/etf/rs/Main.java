@@ -4,12 +4,24 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static int sumaCifara(int y){
-        int x;
-        for (x=1;x<=8y;x++){
+    public static int sumaCifara(int n){
 
-            System.out.println(x);
+        int suma = 0, x = 0;
+
+        for (int i = 0; i <= n; i++) {
+
+            suma = suma + i;
+
+            }
+
+        for (int i = 1; i <= n; i++){
+
+            x = suma % i;
+
+            if (x == 0) System.out.println(i);
+
         }
+
         return x;
     }
 
